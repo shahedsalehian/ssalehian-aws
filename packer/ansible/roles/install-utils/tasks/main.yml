@@ -1,0 +1,13 @@
+---
+  - name: Install Utilities
+    become: true
+    apt:
+      name: "{{ item }}"
+      state: present
+      extra-args: --upgrade
+    with_items:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg-agent
+      - software-properties-common
