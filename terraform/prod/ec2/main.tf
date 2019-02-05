@@ -27,7 +27,7 @@ data "aws_ami" "ssalehian" {
 
   filter {
     name   = "name"
-    values = ["sssalehian-ami *"]
+    values = ["ssalehian-ami *"]
   }
 
   owners = ["${data.aws_caller_identity.current.account_id}"]

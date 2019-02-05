@@ -89,3 +89,4 @@ yarn-debug.log*
 !/storage/.keep
 
 .vagrant/
+playbook.retry
