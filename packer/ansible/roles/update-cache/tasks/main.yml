@@ -1,5 +1,6 @@
 ---
-  - name: Update Cache
-    become: true
-    apt:
-      update_cache: yes
+- name: update Cache
+  become: true
+  apt:
+    update_cache: yes
+
