@@ -6,3 +6,4 @@
     - update-cache
     - install-utils
     - install-docker
+    - update-nginx
