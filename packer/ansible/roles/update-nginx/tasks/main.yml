@@ -1,0 +1,20 @@
+---
+- name: update reddit-clone nginx config
+  become: true
+  copy:
+    src: ./config_files/reddit-clone.conf
+    dest: /etc/nginx/sites-enabled/reddit-clone.conf
+- name: update library-app nginx config
+  become: true
+  copy:
+    src: ./config_files/library-app.conf
+    dest: /etc/nginx/sites-enabled/library-app.conf
+- name: update roster-app nginx config
+  become: true
+  copy:
+    src: ./config_files/roster-app.conf
+    dest: /etc/nginx/sites-enabled/roster-app.conf
+- name: ensure nginx is started and has the latest version
+  become: true
+  apt: name=nginx state=latest
+

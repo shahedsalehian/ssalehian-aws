@@ -2,5 +2,5 @@
 - name: Install Utilities
   become: true
   apt:
-    name: ['python-minimal','apt-transport-https', 'ca-certificates', 'curl', 'gnupg-agent', 'software-properties-common']
-    state: present 
+    name: ['python-minimal','apt-transport-https', 'ca-certificates', 'curl', 'gnupg-agent', 'software-properties-common', 'nginx']
+    state: present
